@@ -1,0 +1,162 @@
+@font-face {
+  font-family: ElMessiri;
+  src: url(./fonts/ElMessiri-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: NorseBold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: JetBrains;
+  src: url(./fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+:root {
+  /* --check-border: 1px solid red; */
+  font-size: 16px;
+  --left-padding: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: sans-serif;
+}
+
+
+/* Hero */
+.hero {
+  width: 37vw;
+  height: 100vh;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  flex: 1 0 auto;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 0.5rem 0;
+  position: relative;
+  top: 22%;
+}
+
+.logo>img {
+  border: var(--check-border);
+  height: 100%;
+}
+
+.logo>p {
+  font-family: NorseBold;
+  color: white;
+  font-size: 5rem;
+  border: var(--check-border);
+}
+/* Hero */
+
+
+/* Form */
+.main {
+  background-color: rgb(248, 248, 248);
+}
+
+.intro {
+  font-weight: bold;
+  padding: 5rem 4rem 2rem var(--left-padding);
+  font-size: 1.3rem;
+}
+
+.form-top {
+  padding: 1.5rem 0 1.5rem var(--left-padding);
+  background-color: white;
+  box-shadow: 0 3px 7px -4px gray;
+}
+
+.fields {
+  /* padding-left: var(--left-padding); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 4rem;
+}
+
+.fields>div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: JetBrains;
+  font-size: 0.7rem;
+}
+
+.legend {
+  /* padding-left: var(--left-padding); */
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  font-family: sans-serif;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.3rem 0 0.3rem 0.6rem;
+  width: 15rem;
+  flex: 1 1 initial;
+}
+
+input.error {
+  border: 1px solid rgb(200, 50, 50);
+}
+
+input:focus {
+  border: 1px solid dodgerblue;
+  outline: none;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.buttons {
+  padding-left: var(--left-padding);
+}
+
+.buttons * {
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: #596D48;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #6E825D;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6E825D;
+}
+
+.psw-check {
+  color: rgb(200, 50, 50);
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
